@@ -1,6 +1,6 @@
 # project Euler Problem #1
 
-numbers = range(1001)
+numbers = range(1000)
 mb = []
 mt = []
 mf = []
