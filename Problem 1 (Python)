@@ -1,0 +1,21 @@
+# project Euler Problem #1
+
+numbers = range(1001)
+mb = []
+mt = []
+mf = []
+
+def multiple_finder(x):
+	for i in x:
+		if i % 3 == 0 and i % 5 == 0:
+			mb.append(i)
+		elif i % 3 == 0:
+			mt.append(i)
+		elif i % 5 == 0:
+			mf.append(i)
+	sm = mb + mt + mf
+	multiple_sum = sum(sm)
+	print multiple_sum
+	
+
+multiple_finder(numbers)
